@@ -1,22 +1,366 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>Fit Note — Privacy Policy</title></head>
-<body style="font-family:Arial;max-width:800px;margin:40px auto;padding:20px">
-<h1>Privacy Policy — Fit Note</h1>
-<p>Last updated: May 2026</p>
-<h2>Data We Collect</h2>
-<p>Fit Note collects: email or phone number, workout data, body weight, 
-morphological profile (optional). Data is stored locally and on Supabase 
-servers located in Europe.</p>
-<h2>Data We Do NOT Collect</h2>
-<p>We do not collect location, contacts, or biometric data.</p>
-<h2>Advertising</h2>
-<p>Free users may see ads via Google AdMob. AdMob may collect data 
-per Google's privacy policy.</p>
-<h2>Your Rights (GDPR)</h2>
-<p>You can delete all your data at any time from Settings → 
-Delete my data. Contact: piegeamorues42sp@gmail.com</p>
-<h2>Contact</h2>
-<p>piegeamorues42sp@gmail.com</p>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Note — Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 { color: #667eea; margin-top: 40px; }
+        h2 { color: #555; margin-top: 30px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+        h3 { color: #666; margin-top: 20px; }
+        .highlight { background: #f9f9f9; padding: 15px; border-left: 4px solid #667eea; margin: 15px 0; }
+        .last-updated { color: #999; font-size: 14px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        table td, table th { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        table th { background: #f5f5f5; font-weight: 600; }
+        ul { margin: 15px 0; }
+        li { margin: 8px 0; }
+    </style>
+</head>
+<body>
+
+<h1>🔒 Privacy Policy — Fit Note</h1>
+<p class="last-updated">Last updated: May 31, 2026</p>
+
+<div class="highlight">
+    <strong>Contact:</strong> ewan.olivierverdier1@gmail.com | SIRET: 105 250 336 | Location: Nice, France
+</div>
+
+---
+
+<h2>1. Introduction</h2>
+<p>
+Fit Note IA ("we", "us", "our", or "App") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, including any related features, functionality, and services we may offer.
+</p>
+<p>
+Please read this privacy policy carefully. If you do not agree with our policies and practices, please do not use our App.
+</p>
+
+---
+
+<h2>2. Information We Collect</h2>
+
+<h3>2.1 Information You Provide</h3>
+<ul>
+    <li><strong>Account Information:</strong> Email address, phone number, username, password</li>
+    <li><strong>Fitness Data:</strong> Workout logs, exercises, sets, reps, weight, duration, rest periods</li>
+    <li><strong>Health Data:</strong> Body weight, height, age, gender, morphological profile (chest, waist, hips measurements) — optional</li>
+    <li><strong>AI Coach Interactions:</strong> Messages sent to MAX (our AI coach) for form tips, motivation, and workout advice</li>
+    <li><strong>Payment Information:</strong> Processed through RevenueCat (we do not store payment card details directly)</li>
+</ul>
+
+<h3>2.2 Information Collected Automatically</h3>
+<ul>
+    <li><strong>Device Information:</strong> Device model, OS version, unique device identifier</li>
+    <li><strong>App Analytics:</strong> Features used, crash reports, app performance metrics</li>
+    <li><strong>Advertising ID:</strong> Google Mobile Ads ID (for personalized advertising)</li>
+    <li><strong>IP Address & Log Data:</strong> Timestamps, error logs, usage patterns</li>
+</ul>
+
+<h3>2.3 Data We Do NOT Collect</h3>
+<ul>
+    <li>❌ Precise location data (GPS, cellular location)</li>
+    <li>❌ Contact lists, calendar, or file access</li>
+    <li>❌ Biometric data (fingerprints, facial recognition)</li>
+    <li>❌ Health app data (unless explicitly synced by user — not supported yet)</li>
+</ul>
+
+---
+
+<h2>3. How We Use Your Data</h2>
+
+<table>
+    <tr>
+        <th>Data Type</th>
+        <th>Purpose</th>
+        <th>Legal Basis</th>
+    </tr>
+    <tr>
+        <td>Email, Password</td>
+        <td>Account creation, authentication, password reset</td>
+        <td>Contract performance</td>
+    </tr>
+    <tr>
+        <td>Workout & Health Data</td>
+        <td>Display progress, calculate stats, training recommendations</td>
+        <td>Contract performance</td>
+    </tr>
+    <tr>
+        <td>AI Coach Messages</td>
+        <td>Provide personalized coaching via Groq AI (llama-3.3-70b)</td>
+        <td>Contract performance</td>
+    </tr>
+    <tr>
+        <td>Subscription Data</td>
+        <td>Process payments, manage premium features, entitlements</td>
+        <td>Contract performance</td>
+    </tr>
+    <tr>
+        <td>Analytics & Crash Data</td>
+        <td>Improve app performance, fix bugs, understand usage patterns</td>
+        <td>Legitimate interest</td>
+    </tr>
+    <tr>
+        <td>Advertising ID</td>
+        <td>Serve personalized ads (free tier only)</td>
+        <td>Legitimate interest / Consent</td>
+    </tr>
+</table>
+
+---
+
+<h2>4. Data Sharing & Third Parties</h2>
+
+<h3>4.1 Service Providers (Data Processors)</h3>
+<ul>
+    <li><strong>Supabase (Backend):</strong> Stores user accounts, workout data. Servers in Europe (GDPR-compliant). <a href="https://supabase.com/privacy">Privacy Policy</a></li>
+    <li><strong>Groq (AI Coaching):</strong> Processes MAX coach conversations. Requests are ephemeral (not stored by Groq). <a href="https://groq.com/privacy/">Privacy Policy</a></li>
+    <li><strong>RevenueCat (Subscriptions):</strong> Handles in-app purchases, subscription management. <a href="https://www.revenuecat.com/privacy">Privacy Policy</a></li>
+    <li><strong>Google AdMob (Advertising):</strong> Serves ads to free users. Collects advertising ID and device data. <a href="https://policies.google.com/privacy">Privacy Policy</a></li>
+    <li><strong>Firebase (Analytics):</strong> Crash reporting and app performance. <a href="https://firebase.google.com/support/privacy">Privacy Policy</a></li>
+</ul>
+
+<h3>4.2 Data Sharing Policy</h3>
+<p>
+We <strong>do not sell</strong> your personal data. We share data with third parties only for the purposes listed above and only to the extent necessary.
+</p>
+<p>
+Your workout and health data is never shared with advertisers or third parties for marketing purposes.
+</p>
+
+---
+
+<h2>5. International Data Transfers</h2>
+<p>
+Fit Note is based in France (Nice) and operates under GDPR. Your data is primarily stored in Europe (Supabase servers).
+</p>
+<p>
+Some data may be processed by third parties located in the USA (Google, Groq, RevenueCat). These transfers are protected by:
+</p>
+<ul>
+    <li>Standard Contractual Clauses (SCCs) under GDPR Article 46</li>
+    <li>Privacy Shield / Adequacy Decisions where applicable</li>
+</ul>
+
+---
+
+<h2>6. Data Retention</h2>
+
+<table>
+    <tr>
+        <th>Data</th>
+        <th>Retention Period</th>
+    </tr>
+    <tr>
+        <td>Account & Workout Data</td>
+        <td>Until you delete your account or request deletion</td>
+    </tr>
+    <tr>
+        <td>AI Coach Conversations</td>
+        <td>Stored locally; deleted when you clear app data or delete account</td>
+    </tr>
+    <tr>
+        <td>Analytics & Crash Logs</td>
+        <td>30-90 days, then automatically deleted</td>
+    </tr>
+    <tr>
+        <td>Subscription Records</td>
+        <td>Retained for 7 years (tax/legal requirement)</td>
+    </tr>
+    <tr>
+        <td>Advertising Data (AdMob)</td>
+        <td>Per Google's retention policy (typically 18-24 months)</td>
+    </tr>
+</table>
+
+<p>
+<strong>After Account Deletion:</strong> All personal data is permanently deleted within 30 days of your deletion request. Subscription records may be retained for legal/tax compliance.
+</p>
+
+---
+
+<h2>7. Your Rights (GDPR, CCPA, LGPD)</h2>
+
+<h3>7.1 EU & UK Users (GDPR)</h3>
+<p>You have the right to:</p>
+<ul>
+    <li><strong>Access:</strong> Request a copy of your personal data</li>
+    <li><strong>Rectification:</strong> Correct inaccurate information</li>
+    <li><strong>Erasure:</strong> Delete your account and associated data ("right to be forgotten")</li>
+    <li><strong>Portability:</strong> Receive your data in a portable format</li>
+    <li><strong>Restrict Processing:</strong> Limit how we use your data</li>
+    <li><strong>Object:</strong> Opt out of marketing and profiling</li>
+    <li><strong>Lodge a Complaint:</strong> Contact your local Data Protection Authority</li>
+</ul>
+
+<h3>7.2 California Users (CCPA/CPRA)</h3>
+<p>You have the right to:</p>
+<ul>
+    <li><strong>Know:</strong> What personal information is collected</li>
+    <li><strong>Delete:</strong> Request deletion of your data</li>
+    <li><strong>Opt-Out:</strong> Opt out of the "sale" of personal information (we don't sell data)</li>
+    <li><strong>Non-Discrimination:</strong> No price/service discrimination for exercising your rights</li>
+</ul>
+
+<h3>7.3 Brazil Users (LGPD)</h3>
+<p>Similar rights to GDPR apply under Brazil's LGPD legislation.</p>
+
+<h3>7.4 Exercising Your Rights</h3>
+<p>
+To exercise any of these rights, contact us at: <strong>ewan.olivierverdier1@gmail.com</strong>
+</p>
+<p>
+We will respond to your request within 30 days (or as required by law).
+</p>
+
+---
+
+<h2>8. Data Security</h2>
+
+<p>
+We implement industry-standard security measures to protect your data:
+</p>
+<ul>
+    <li>✅ HTTPS/TLS encryption for all data in transit</li>
+    <li>✅ Encrypted password storage (bcrypt hashing)</li>
+    <li>✅ Role-based access control for our team</li>
+    <li>✅ Regular security audits and updates</li>
+    <li>✅ Supabase Enterprise-grade security (SOC 2 compliant)</li>
+</ul>
+
+<p>
+<strong>However:</strong> No system is 100% secure. While we implement strong security practices, we cannot guarantee absolute security of your data.
+</p>
+
+---
+
+<h2>9. Children's Privacy</h2>
+
+<p>
+Fit Note is intended for users <strong>13 years and older</strong> (or the legal age of digital consent in your country).
+</p>
+<p>
+We do not knowingly collect data from children under 13. If we become aware of such collection, we will delete the data and close the account.
+</p>
+<p>
+For users 13-17, parental consent may be required in some jurisdictions. Parents can request data deletion by contacting us.
+</p>
+
+---
+
+<h2>10. Advertising & Tracking</h2>
+
+<h3>10.1 AdMob (Free Users)</h3>
+<p>
+Free users see ads served by Google AdMob. AdMob collects:
+</p>
+<ul>
+    <li>Advertising ID (unique identifier)</li>
+    <li>Device type, OS version, country</li>
+    <li>Approximate location (not precise GPS)</li>
+    <li>In-app behavior to personalize ads</li>
+</ul>
+
+<p>
+You can opt out of personalized ads in your device settings:
+</p>
+<ul>
+    <li><strong>Android:</strong> Settings → Google → Manage your Google Account → Data & Privacy → Ad Personalization → Turn off</li>
+</ul>
+
+<h3>10.2 No Tracking Pixels or Cookies</h3>
+<p>
+We do not use third-party tracking pixels, cookies, or SDKs for cross-app tracking.
+</p>
+
+---
+
+<h2>11. Changes to This Privacy Policy</h2>
+
+<p>
+We may update this privacy policy to reflect changes in our practices, technology, legal requirements, or other factors.
+</p>
+<p>
+We will notify you of significant changes by:
+</p>
+<ul>
+    <li>Posting the updated policy in the App</li>
+    <li>Updating the "Last updated" date above</li>
+    <li>Sending an email notification (if material changes)</li>
+</ul>
+
+<p>
+Your continued use of the App after changes constitutes acceptance of the new policy.
+</p>
+
+---
+
+<h2>12. California Specific Disclosures (CCPA/CPRA)</h2>
+
+<h3>Categories of Personal Information Collected:</h3>
+<ul>
+    <li>Identifiers (email, username, device ID)</li>
+    <li>Commercial information (subscription payments, purchase history)</li>
+    <li>Internet/electronic activity (app usage, crash logs)</li>
+    <li>Geolocation data (not collected by us, but AdMob may infer location)</li>
+    <li>Health information (fitness/weight data — user-provided, optional)</li>
+</ul>
+
+<h3>Purposes of Collection:</h3>
+<ul>
+    <li>Provide App functionality and customer support</li>
+    <li>Process payments and manage subscriptions</li>
+    <li>Improve App performance and security</li>
+    <li>Serve personalized advertising (free users)</li>
+    <li>Comply with legal obligations</li>
+</ul>
+
+<h3>Do We Sell Data?</h3>
+<p>
+<strong>No.</strong> We do not sell, rent, or trade personal information. AdMob may use your data for advertising purposes, but this is not a "sale" under CCPA (we receive no monetary compensation).
+</p>
+
+---
+
+<h2>13. EU Data Protection Authority</h2>
+
+<p>
+If you are in the EU and have concerns about our privacy practices, you can contact your local Data Protection Authority:
+</p>
+<ul>
+    <li><strong>France (CNIL):</strong> <a href="https://www.cnil.fr">https://www.cnil.fr</a></li>
+    <li><strong>Spain (AEPD):</strong> <a href="https://www.aepd.es">https://www.aepd.es</a></li>
+    <li><strong>Other EU countries:</strong> <a href="https://edpb.ec.europa.eu/about-edpb/board/members_en">EDPB Members</a></li>
+</ul>
+
+---
+
+<h2>14. Contact Us</h2>
+
+<p>
+If you have any questions, concerns, or requests regarding this privacy policy or our privacy practices, please contact us:
+</p>
+
+<div class="highlight">
+    <strong>Email:</strong> ewan.olivierverdier1@gmail.com<br>
+    <strong>Address:</strong> 168 Av. Sainte-Marguerite, Nice 06200, France<br>
+    <strong>SIRET:</strong> 105 250 336<br>
+    <strong>Response Time:</strong> We aim to respond within 30 days
+</div>
+
+---
+
+<p style="text-align: center; color: #999; margin-top: 60px; font-size: 12px;">
+© 2026 Evvan. All rights reserved. | <a href="./delete-account.html">Delete Account</a> | <a href="./delete-data.html">Delete Data</a>
+</p>
+
 </body>
 </html>
